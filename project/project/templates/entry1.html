@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <head>
+        <title>Entry1</title>
+
+    </head>
+    <body>
+        
+        <h1>Entry1 Page</h1>
+<p>List elements:</p>
+<ul>
+  
+  <p>{{list.0}}</p>
+  <p>{{list.1}}</p>
+  <p>{{list.2}}</p>
+  <p>{{list.4}}</p>
+    <h1>display list data by loop </h1>
+        {% for item in list %}
+        <li>{{ item }}</li>
+        {% endfor %}
+</ul>
+    </body>
+</html>

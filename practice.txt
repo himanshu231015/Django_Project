@@ -1,0 +1,3 @@
+1. write django application just to send hello world message as response.
+2. write django application to send server time as response.
+3. single application with multiple views.

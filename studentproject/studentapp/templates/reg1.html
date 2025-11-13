@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <title>Registration Page</title>
+  <body>
+  <h1>Register</h1>
+
+  <form id="regForm" autocomplete="off" novalidate>
+    <div>
+      <label for="ename">Full name (ename) <span aria-hidden="true">*</span><br>
+        <input id="ename" name="ename" type="text">
+      </label>
+    </div>
+
+    <div>
+      <label for="unm">Username (unm) <span aria-hidden="true">*</span><br>
+        <input id="unm" name="unm" type="text" required placeholder="username123"
+               pattern="^[A-Za-z0-9_]{3,20}$"
+               title="3–20 characters; letters, numbers, underscore allowed">
+      </label>
+    </div>
+
+    <div>
+      <label for="eadd">Email address (eadd) <span aria-hidden="true">*</span><br>
+        <input id="eadd" name="eadd" type="email" required placeholder="you@example.com"><br><br/>
+      </label>
+    </div>
+
+    <div>
+      <label for="pw">Password (pw) <span aria-hidden="true">*</span><br>
+        <input id="pw" name="pw" type="password" required minlength="6" placeholder="At least 6 characters"><br><br/>
+      </label>
+      <div>
+        <label>
+          <input id="showPw" type="checkbox"> Show password
+        </label>
+      </div>
+    </div>
+
+    <div>
+      <button type="submit">Register</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+</head>
+
+
