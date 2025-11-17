@@ -6,10 +6,25 @@
   <body>
   <h1>Register</h1>
 
-  <form id="regForm" autocomplete="off" novalidate>
+  <form>
+    <div>
+      <label for="eid">enter your eid <span aria-hidden="true">*</span><br>
+        <input id="eid" name="eid" type="text" required placeholder="Hima@1234"><br><br/>
+      </label>
+    </div>
     <div>
       <label for="ename">Full name (ename) <span aria-hidden="true">*</span><br>
         <input id="ename" name="ename" type="text">
+      </label>
+    </div>
+    <div>
+      <label for="esalr">Enter your salary <span aria-hidden="true">*</span><br>
+        <input id="esalr" name="esalr" type="number" placeholder="LPA"><br><br/>
+      </label>
+      <div>
+    <div>
+      <label for="eadd">Email address (eadd) <span aria-hidden="true">*</span><br>
+        <input id="eadd" name="eadd" type="email" required placeholder="you@example.com"><br><br/>
       </label>
     </div>
 
@@ -21,11 +36,7 @@
       </label>
     </div>
 
-    <div>
-      <label for="eadd">Email address (eadd) <span aria-hidden="true">*</span><br>
-        <input id="eadd" name="eadd" type="email" required placeholder="you@example.com"><br><br/>
-      </label>
-    </div>
+    
 
     <div>
       <label for="pw">Password (pw) <span aria-hidden="true">*</span><br>
